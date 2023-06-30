@@ -1,0 +1,1763 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>싸니까 믿으니까 인터파크도서</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+    <script src="js/sideLogin.js"></script>
+    <script src="js/mypg.js"></script>
+    <script src="js/topBanner_closeBtn.js"></script>
+    <script src="js/headerBanner.js"></script>
+    <script src="js/allCategory.js"></script>
+    <script src="js/slider_closeBtn.js"></script>
+    <script src="js/bestseller.js"></script>
+    <script src="js/sliderWrap.js"></script>
+    <script src="js/mainbannerleft_Btn.js"></script>
+    <script src="js/sliderWrap_hoverbtn.js"></script>
+    <script src="js/interpark_recomendSlide.js"></script>
+    <script src="js/media.on.js"></script>
+    <script src="js/categoryTap_nav.js"></script>
+    <script src="js/literature.js"></script>
+    <script src="js/pointSection.js"></script>
+    <script src="js/sale.js"></script>
+    <script src="js/interpark_recomendSlide_ajax.js"></script>
+    <script src="js/tabContent_ajax.js"></script>
+    <script src="js/sale_ajax.js"></script>
+    <script src="https://kit.fontawesome.com/9401a2518e.js" crossorigin="anonymous"></script>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--sideLogin-->
+    <div class="sideLogin">
+        <div class="loginBox">
+            <h3>
+                <img src="https://bimage.interpark.com/renewPark/reBookpark/aside/quickMenu/tit_login.png" alt="login">
+            </h3>
+            <p class="loginBox_text">
+                반갑습니다.
+                <br>
+                로그인해주세요
+            </p>
+            <button> 로그인 </button>
+        </div>
+        <div class="txtbox">도서상품권<i class="fas fa-chevron-right"></i></div>
+        <div class="txtbox"> 북카트 <i class="fas fa-caret-up"></i></div>
+        <div class="txtbox"> 오늘 본 상품 <span>(10)</span><i class="fas fa-caret-up"></i></div>
+        <div class="txtbox"><img src="https://bimage.interpark.com/milti/renewPark/main/86249_201907151604551932.jpg" alt="loginBox_img"></div>
+        <div class="txtbox">
+            <div id="txtbtn">
+                <i class="fas fa-caret-up noab"></i>
+                TOP
+            </div>
+        </div>
+        <div class="nextbox">
+            <span class="loginBox_prev" style="display: none; font-size: 18px; position: absolute; left: 5px;"> > </span>
+            <span class="loginBox_next" style=" font-size: 18px; position: absolute; left: 5px;"> < </span>
+        </div>
+    </div>
+    <!--topBanner-->
+    <header>
+        <div id="topBanner">
+            <div class="topBanner_leftWrap">
+                <div class="topBanner_left">
+                    <img src="https://bimage.interpark.com/milti/renewPark/main/95405_202305121642187071.jpg"
+                        alt="topBanner_left_img">
+                </div>
+            </div>
+
+            <div class="topBanner_rightWarp">
+                <div class="topBanner_right">
+                    <img src="https://bimage.interpark.com/milti/renewPark/main/95405_202304071649591782.jpg"
+                        alt="topBanner_right_img">
+                    <div class="topBanner_btn">
+                        <img src="https://tnsumi9723.github.io/sumi_interpark1/img/closeBtn.png"
+                            alt="topBanner_closeBtn">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--headerNav-->
+        <div id="headerTop">
+            <div class="headerNav">
+                <div class="headerNav_left">
+                    <ul>
+                        <li><a href="#">홈</a></li>
+                        <li><a href="#">투어</a></li>
+                        <li><a href="#">티켓</a></li>
+                        <li><a href="#">쇼핑</a></li>
+                        <li><a href="#">도서</a></li>
+                    </ul>
+                </div>
+
+                <div class="headerNav_right">
+                    <ul>
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                        <li><a href="#">북카드</a></li>
+                        <li class="mypg"><a href="#">마이페이지
+                                <img src="https://bimage.interpark.com/UI/pc/main/2016/gnb/arrow_down.png"
+                                    alt="arrow_down" class="arrow_down">
+                                <img src="https://bimage.interpark.com/UI/pc/main/2016/gnb/arrow_up.png" alt="arrow_up"
+                                    class="arrow_up" style="display: none;">
+                            </a>
+                            <ul class="my_list">
+                                <li><a href="#">마이도서</a></li>
+                                <li><a href="#">주문배송조회</a></li>
+                                <li><a href="#">I-포인트적립</a></li>
+                                <li><a href="#">나의할인쿠폰</a></li>
+                                <li><a href="#">회원수정</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">북피니언</a></li>
+                        <li><a href="#">고객센터</a></li>
+                        <li><a href="#">모바일APP</a></li>
+                        <li class="language"><a href="#">Language
+                                <img src="https://bimage.interpark.com/UI/pc/main/2016/gnb/arrow_down.png"
+                                    alt="arrow_down" class="arrow_down">
+                                <img src="https://bimage.interpark.com/UI/pc/main/2016/gnb/arrow_up.png" alt="arrow_up"
+                                    class="arrow_up" style="display: none;">
+                            </a>
+                            <ul class="my_language">
+                                <li><a href="#">English</a></li>
+                                <li><a href="#">日本語</a></li>
+                                <li><a href="#">中文</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--headerMid-->
+        <div id="headerMid">
+            <div class="header_bottom">
+                <div class="header_logosearch">
+                    <div id="logo">
+                        <a href="index.html"><img src="https://bimage.interpark.com/UI/pc/main/2017/gnb/interparkBook_logo.png" alt="logo"></a>
+                    </div>
+                    <div id="search">
+                        <div class="search_bar">
+                            <input type="search" class="search_text" style="width: 350px; font-size: 14px; font-weight: bold; padding: 5px; border: none;  color: #666;
+                    line-height: 18px;" placeholder="죽기 전, 반드시 읽어야 하는 책">
+                            <a href="#"><img src="https://bimage.interpark.com/UI/pc/main/2017/gnb/btn_search.png"
+                                    alt="btn_search"></a>
+                        </div>
+                        <ul class="search_barnav">
+                            <li><a href="#">최인아 대표</a></li>
+                            <li>|</li>
+                            <li><a href="#">과학의 위로</a></li>
+                            <li>|</li>
+                            <li><a href="#">이해인 추천</a></li>
+                            <li>|</li>
+                            <li><a href="#">돈많은친구</a></li>
+                            <li>|</li>
+                            <li><a href="#">부와 성공의 법칙</a></li>
+                        </ul>
+                    </div>
+
+                    <div id="headerBanner">
+                        <ul class="headerBanner_slide">
+                            <li><a href="#"><img
+                                        src="https://simage.kyobobook.co.kr/newimages/adcenter/IMAC/creatives/2023/05/04/71047/GN_hn_0503_1.jpg"
+                                        alt="headerBanner_slide1"></a></li>
+                            <li><a href="#"><img
+                                        src="https://simage.kyobobook.co.kr/newimages/adcenter/IMAC/creatives/2023/05/04/71047/GN_hn_0503_2.jpg"
+                                        alt="headerBanner_slide2"></a></li>
+                            <li><a href="#"><img
+                                        src="https://simage.kyobobook.co.kr/newimages/adcenter/IMAC/creatives/2023/05/04/71047/GN_dun_0407.jpg"
+                                        alt="headerBanner_slide3"></a></li>
+
+                            <li><a href="#"><img
+                                        src="https://simage.kyobobook.co.kr/newimages/adcenter/IMAC/creatives/2023/03/31/59288/0331vbwmvmowm.jpg"
+                                        alt="headerBanner_slide4"></a></li>
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--bookWrapper-->
+            <div id="bookWrapper">
+                <div class="bookNav">
+                    <div class="bookAll">
+                        <div class="allCategory">
+                            <p class="menuicon"><i class="fa-solid fa-bars"
+                                    style="color: #fff; font-size: 14px; margin: 3px 0 0 0px; padding: 5px;"></i></p>
+                            <p>전체 카테고리</p>
+                            <p class="menuicon_down">
+                                <i class="fa-solid fa-chevron-down" style="font-weight: 900; padding: 5px;"
+                                    id="down"></i>
+                            </p>
+                        </div>
+                        <div class="categoryMenu" style="display:none; z-index: 5;">
+                            <div class="mainCategory">
+                                <div class="category1">
+                                    <h3>국내도서</h3>
+                                    <div class="categoryNav">
+                                        <ul>
+                                            <li><a href="#">소설</a></li>
+                                            <li><a href="#">장르소설</a></li>
+                                            <li><a href="#">시·에세이</a></li>
+                                            <li><a href="#">경제경영</a></li>
+                                            <li><a href="#">자기계발</a></li>
+                                            <li><a href="#">사회과학</a></li>
+                                            <li><a href="#">역사·문화</a></li>
+                                            <li><a href="#">예술·대중문화</a></li>
+                                            <li><a href="#">인문</a></li>
+                                            <li><a href="#">자연·과학</a></li>
+                                            <li><a href="#">종교·역학</a></li>
+                                            <li><a href="#">유아</a></li>
+                                            <li><a href="#">아동</a></li>
+                                            <li><a href="#">가정과생활</a></li>
+                                            <li><a href="#">청소년</a></li>
+                                            <li><a href="#">초등학습</a></li>
+                                            <li><a href="#">중등학습</a></li>
+                                            <li><a href="#">고등학습</a></li>
+                                            <li><a href="#">국어·외국어·사전</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="#">자격서·수험서</a></li>
+                                            <li><a href="#">공무원 수험서</a></li>
+                                            <li><a href="#">컴퓨터·인터넷</a></li>
+                                            <li><a href="#">전공·대학교재</a></li>
+                                            <li><a href="#">여행</a></li>
+                                            <li><a href="#">취미레저</a></li>
+                                            <li><a href="#">건강뷰티</a></li>
+                                            <li><a href="#">잡지</a></li>
+                                            <li><a href="#">만화·라이트노벨</a></li>
+                                            <li><a href="#">유아동전집</a></li>
+                                            <li><a href="#" style="color: #f15300;">예약판매</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="category2">
+                                    <h3>외국도서</h3>
+                                    <div class="categoryNav2">
+                                        <ul>
+                                            <li><a href="#">어린이</a></li>
+                                            <li><a href="#">문학</a></li>
+                                            <li><a href="#">ELT·사전</a></li>
+                                            <li><a href="#">컴퓨터</a></li>
+                                            <li><a href="#">경제·인문</a></li>
+                                            <li><a href="#">실용·예술</a></li>
+                                            <li><a href="#">대학·전문서적</a></li>
+                                            <li><a href="#">해외잡지</a></li>
+                                            <li><a href="#">학습교구/게임</a></li>
+                                            <li><a href="#">프랑스도서</a></li>
+                                            <li><a href="#" style="color: #f15300;">예약판매</a></li>
+                                            <li><a href="#" style="color: #f15300;">원서vs번역서</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="category3">
+                                    <h3 class="goods" style="cursor: pointer;">굿즈#></h3>
+                                    <div class="categoryNav3">
+                                        <ul>
+                                            <li><a href="#">문구/팬시</a></li>
+                                            <li><a href="#">사무/학용</a></li>
+                                            <li><a href="#">학습</a></li>
+                                            <li><a href="#">독서용품</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="btnX"><img
+                                    src="https://tnsumi9723.github.io/sumi_interpark1/img/icon_closeX.png"
+                                    alt="closeX"
+                                    style="padding: 5px; float: right; width: 30px; height: 30px; object-fit: cover; margin: 10px 0 0 0px;">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="secondNav">
+                        <ul>
+                            <li><a href="sub.html">베스트셀러</a></li>
+                            <li><a href="sub.html">신간</a></li>
+                            <li><a href="sub.html">이벤트</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!--slider-->
+    <div id="main">
+        <div class="bannerWrap">
+            <div class="slider"
+                style="width: 100%; height: 316px; margin: 0 auto; position: relative;">
+                <div class="sliderBox">
+                    <div id="sliderLeft">
+                        <img src="https://bimage.interpark.com/milti/renewPark/main/102785_202305191048499051.png"
+                            alt="sliderLeft_img">
+                        <img src="https://bimage.interpark.com/renewPark/reBookpark/aside/quickMenu/img_cuttonBannerGuide.png"
+                            alt="sliderLeft_img2">
+                    </div>
+                    <div class="sliderLeft_hover" style="display: none; opacity: 0px;">
+                        <img src="https://bimage.interpark.com/milti/bookPark/advertise/adImg/nadImg100281.jpg"
+                            alt="sliderLeft_hoverimg">
+                        <span class="hover_closeBtn">
+                            <img src="https://subin114.github.io/portfolio_03/img/bt_mLeftLyToday.png" alt="오늘하루 안보기">
+                        </span>
+                        <span class="hover_closeBtn2">
+                            <img src="https://subin114.github.io/portfolio_03/img/bt_mLeftLyClose.png" alt="닫기">
+                        </span>
+                    </div>
+                    <div id="sliderWrap">
+                        <ul class="sliderImg">
+                            <li>
+                                <a href="#" target="_self">
+                                    <img src="https://bimage.interpark.com/milti/renewPark/main/116337_202305121514364301.png"
+                                        alt="인생주간_5월">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" target="_self">
+                                    <img src="https://bimage.interpark.com/milti/renewPark/main/116337_202303301634419710.png"
+                                        alt="카카오페이_4월/5월">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" target="_self">
+                                    <img src="https://bimage.interpark.com/milti/renewPark/main/116337_202304071621179951.png"
+                                        alt="던킨FREE">
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a href="#" target="_self">
+                                    <img src="https://bimage.interpark.com/milti/renewPark/main/116337_202304240834343811.png"
+                                        alt="혜택_5월">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" target="_self">
+                                    <img src="https://bimage.interpark.com/milti/renewPark/main/116337_202304261556137731.png"
+                                        alt="피규어북/원서">
+                                </a>
+                            </li>
+
+
+
+                            <li>
+                                <a href="#" target="_self">
+                                    <img src="https://bimage.interpark.com/milti/renewPark/main/116337_202305050124325481.png"
+                                        alt="무료배송">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" target="_self">
+                                    <img src="https://bimage.interpark.com/milti/renewPark/main/116337_202305021116532721.png"
+                                        alt="이달의책_5월">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" target="_self">
+                                    <img src="https://bimage.interpark.com/milti/renewPark/main/116337_202305121516114071.jpg"
+                                        alt="우리는어린이">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" target="_self">
+                                    <img src="https://bimage.interpark.com/milti/renewPark/main/116338_202305121520588591.jpg"
+                                        alt="비전공자도 이해할 수 있는 AI 지식">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" target="_self">
+                                    <img src="https://bimage.interpark.com/milti/renewPark/main/116342_202305121526255031.png"
+                                        alt="배송비공짜">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" target="_self">
+                                    <img src="https://bimage.interpark.com/milti/renewPark/main/116337_202305121031153311.png"
+                                        alt="교양의시대5월">
+                                </a>
+                            </li>
+
+
+
+                            <li>
+                                <a href="#" target="_self">
+                                    <img src="https://bimage.interpark.com/milti/renewPark/main/116342_202305050135208331.png"
+                                        alt="에드워드호퍼">
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="#" target="_self">
+                                    <img src="https://bimage.interpark.com/milti/renewPark/main/116342_202305021018508301.jpg"
+                                        alt="더식스">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" target="_self">
+                                    <img src="https://bimage.interpark.com/milti/renewPark/main/116342_202303161732577281.png"
+                                        alt="슬로우미라클">
+                                </a>
+                            </li>
+                            
+
+                            <li>
+                                <a href="#" target="_self">
+                                    <img src="https://bimage.interpark.com/milti/renewPark/main/116342_202305081134123251.png"
+                                        alt="북마켓_정기구독">
+                                </a>
+                            </li>
+
+                            <li class="booklist">
+                                <div class="sliderBookimg">
+                                <a href="#" target="_self">
+                                    <img src="https://bimage.interpark.com/milti/bookPark/advertise/adImg/nadImg100272.jpg"
+                                        alt="우리가 겨울을 지나온 방식">
+                                    </a>
+                                    <div>
+                                        <h1 style="position: absolute; left: 470px;">우리가 겨울을 지나온 방식</h1>
+                                        <p style="position: absolute; left: 490px;">세계문학상 수상작</p>
+                                    </div>
+
+                                    <a href="#" target="_self">
+                                        <img src="https://bimage.interpark.com/milti/bookPark/advertise/adImg/nadImg100271.jpg"
+                                            alt="유연함의 힘">
+                                        </a>
+                                        <div>
+                                            <h1 style="position: absolute; left: 700px;">유연함의 힘</h1>
+                                            <p style="position: absolute; left: 695px;">유연함 = 성공</p>
+                                        </div>
+
+                                        <a href="#" target="_self">
+                                            <img src="https://bimage.interpark.com/milti/bookPark/advertise/adImg/nadImg100270.jpg"
+                                                alt="돈은, 너로부터다">
+                                        </a>
+                                            <div>
+                                                <h1 style="position: absolute; right: 935px;">돈은, 너로부터다</h1>
+                                                <p style="position: absolute; right: 925px;">돈’ 시리즈의 완결판!</p>
+                                            </div>
+                                            <a href="#" target="_self">
+                                                <img src="https://bimage.interpark.com/milti/bookPark/advertise/adImg/nadImg100269.jpg"
+                                                    alt="태양 왕 수바 수박의 전설 ">
+                                            </a>
+                                                <div>
+                                                    <h1 style="position: absolute; right: 720px;">태양 왕 수바 수박의 전설</h1>
+                                                    <p style="position: absolute; right: 760px;">수박의 전설</p>
+                                                </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                        <span class="prev"><i class="fa-solid fa-chevron-left"></i></span>
+                        <span class="next"><i class="fa-solid fa-chevron-right"></i></span>
+
+                    </div>
+
+                    <!--bestseller-->
+
+                    <div id="bestseller">
+                        <div class="bestBox">
+                            <p>베스트셀러</p>
+                        </div>
+                        <div class="bestRank">
+                            <div class="today" style="border-bottom: none; border-right: none;">오늘</div>
+                            <div class="week" style="border-bottom: 1px solid rgb(136,136,136);">주간</div>
+                        </div>
+                    </div>
+                    <div class="bestRank_list">
+                        <ul class="today_list" style="display: none;">
+                            <li><a href="#"><span class="number">1</span>
+                                    <i class="fa-solid fa-minus"></i>
+                                    <span class="updown"></span>
+                                    <p>세이노의 가르침</p>
+                                </a>
+                            </li>
+
+                            <li><a href="#"><span class="number">2</span>
+                                    <i class="fa-solid fa-minus"></i>
+                                    <span class="updown"></span>
+                                    <p>모든 삶은 흐른다</p>
+                                </a>
+                            </li>
+
+
+
+                            <li><a href="#"><span class="number">3</span>
+                                    <i class="fa-solid fa-minus"></i>
+                                    <span class="updown"></span>
+                                    <p>이지성의 1만 키로미터</p>
+                                </a>
+                            </li>
+
+                            <li><a href="#"><span class="number">4</span>
+                                    <i class="fa-solid fa-minus"></i>
+                                    <span class="updown"></span>
+                                    <p>메리골드 마음 세탁소</p>
+                                </a>
+                            </li>
+
+                            <li><a href="#"><span class="number">5</span>
+                                    <i class="fa-solid fa-minus"></i>
+                                    <span class="updown"></span>
+                                    <p>내가 가진 것을 세상이 원하게 하라</p>
+                                </a>
+                            </li>
+
+                            <li><a href="#"><span class="number">6</span>
+                                    <i class="fa-solid fa-minus"></i>
+                                    <span class="updown"></span>
+                                    <p>키위엔 영어회화 하루 5분의 기적</p>
+                                </a>
+                            </li>
+
+                            <li><a href="#"><span class="number">7</span>
+                                    <i class="fa-solid fa-caret-up"></i>
+                                    <span class="updown">3</span>
+                                    <p>김대석 셰프의 집밥 레시피</p>
+                                </a>
+                            </li>
+
+
+                            <li><a href="#"><span class="number">8</span>
+                                    <i class="fa-solid fa-caret-up"></i>
+                                    <span class="updown">1</span>
+                                    <p>내면소통</p>
+                                </a>
+                            </li>
+
+                            <li><a href="#"><span class="number">9</span>
+                                    <i class="fa-solid fa-caret-up"></i>
+                                    <span class="updown">9</span>
+                                    <p>퀸텀 시크릿</p>
+                                </a>
+                            </li>
+
+                            <li><a href="#"><span class="number">10</span>
+                                    <i class="fa-solid fa-caret-up"></i>
+                                    <span class="updown">1</span>
+                                    <p>총 균 쇠</p>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <ul class="week_list" style="display: block;">
+
+                            <li><a href="#"><span class="number">1</span>
+                                    <i class="fa-solid fa-minus"></i>
+                                    <span class="updown"></span>
+                                    <p>세이노의 가르침</p>
+                                </a>
+                            </li>
+
+                            <li><a href="#"><span class="number">2</span>
+                                    <i class="fa-solid fa-caret-up"></i>
+                                    <span class="updown">1</span>
+                                    <p>모든 삶은 흐른다</p>
+                                </a>
+                            </li>
+
+                            <li><a href="#"><span class="number">3</span>
+                                    <i class="fa-solid fa-caret-up"></i>
+                                    <span class="updown">2</span>
+                                    <p>나의 돈 많은 고등학교 친구</p>
+                                </a>
+                            </li>
+
+                            <li><a href="#"><span class="number">4</span>
+                                    <i class="fa-solid fa-sort-down"></i>
+                                    <span class="updown">2</span>
+                                    <p>사장학개론</p>
+                                </a>
+                            </li>
+
+                            <li><a href="#"><span class="number">5</span>
+                                    <i class="fa-solid fa-caret-up"></i>
+                                    <span class="updown">5</span>
+                                    <p>아버지의 해방일지</p>
+                                </a>
+                            </li>
+
+                            <li><a href="#"><span class="number">6</span>
+                                    <span class="new">NEW</span>
+                                    <span class="updown"></span>
+                                    <p>이지성의 1만 킬로미터</p>
+                                </a>
+                            </li>
+
+                            <li><a href="#"><span class="number">7</span>
+                                    <i class="fa-solid fa-sort-down"></i>
+                                    <span class="updown">1</span>
+                                    <p>메리골드 마음 세탁소</p>
+                                </a>
+                            </li>
+
+                            <li><a href="#"><span class="number">8</span>
+                                    <i class="fa-solid fa-caret-up"></i>
+                                    <span class="updown">6</span>
+                                    <p>이미 늦었다고 생각하는 당신을 위한 김미경의 마흔 수업</p>
+                                </a>
+                            </li>
+
+                            <li><a href="#"><span class="number">9</span>
+                                    <i class="fa-solid fa-sort-down"></i>
+                                    <span class="updown">2</span>
+                                    <p>건강과 다이어트를 동시에 잡는 7대 3의 법칙 채소·과일식</p>
+                                </a>
+                            </li>
+
+                            <li><a href="#"><span class="number">10</span>
+                                    <i class="fa-solid fa-sort-down"></i>
+                                    <span class="updown">6</span>
+                                    <p>흔한남매 13</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="sliderBotton">
+                <div id="sliderControl">
+                    <div class="cbtn" style="border-top: 1px solid black; color: #000; ">
+                        <h1>핫클릭이벤트</h1>
+                        <div class="subMenu">
+                            <ul>
+                                <li class="subMenu_num"><a href="#">1</a></li>
+                                <li class="subMenu_num"><a href="#">2</a></li>
+                                <li class="subMenu_num"><a href="#">3</a></li>
+                                <li class="subMenu_num"><a href="#">4</a></li>
+                                <li class="subMenu_num"><a href="#">5</a></li>
+                                <li class="subMenu_num"><a href="#">6</a></li>
+                                <li class="subMenu_num"><a href="#">7</a></li>
+                                <li class="subMenu_num"><a href="#">8</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="cbtn" style="border-top: 1px solid black; color: #000;">
+                        <h1>비전공자도 이해할 수 있는 AI 지식</h1>
+                    </div>
+
+                    <div class="cbtn" style="border-top: 1px solid black; color: #000;">
+                        <h1>추천 이벤트</h1>
+                        <div class="subMenu2">
+                            <ul>
+                                <li class="subMenu2_num"><a href="#">1</a></li>
+                                <li class="subMenu2_num"><a href="#">2</a></li>
+                                <li class="subMenu2_num"><a href="#">3</a></li>
+                                <li class="subMenu2_num"><a href="#">4</a></li>
+                                <li class="subMenu2_num"><a href="#">5</a></li>
+                                <li class="subMenu2_num"><a href="#">6</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="cbtn" style="border-top: 1px solid black; color: #000;">
+                        <h1>화제의 책</h1>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!--AD광고배너-->
+
+            <div class="adbannerSection">
+                <div class="col" style="margin: 0 10px 0 0px;"><a href="#"><img
+                            src="https://simage.kyobobook.co.kr/newimages/adcenter/IMAC/creatives/2023/05/12/71047/wel_mid_0510_2.jpg"
+                            alt="미셸 오바마 자기만의 빛"></a></div>
+                <div class="col"><a href="#"><img
+                            src="https://simage.kyobobook.co.kr/newimages/adcenter/IMAC/creatives/2023/05/12/71047/wel_mid_0510_1.jpg"
+                            alt="나의 돈 많은 고등학교 친구"></a></div>
+                <div class="col"><a href="#" style="margin: 0 0px 0 10px;"><img
+                            src="https://simage.kyobobook.co.kr/newimages/adcenter/IMAC/creatives/2022/11/04/59288/221104vpmvlmwld.jpg"
+                            alt="똑똑한 하루 시리즈"></a></div>
+            </div>
+
+            <!--interpark추천,Trend&Issue-->
+            <div id="mainGroup">
+                <div id="mainbanner_left">
+                    <div class="mainbanner_wrap">
+                        <ul class="leftSide">
+                            <li><img src="https://bimage.interpark.com/milti/renewPark/main/86260_202305121548202541.jpg"
+                                    alt="좌측상단배너이미지1"></li>
+                            <li><img src="https://bimage.interpark.com/milti/renewPark/main/86260_202305121548204753.jpg"
+                                    alt="좌측상단배너이미지2"></li>
+                            <li><img src="https://bimage.interpark.com/milti/renewPark/main/86260_202304302021046950.jpg"
+                                    alt="좌측상단배너이미지3"></li>
+                            <li><img src="https://bimage.interpark.com/milti/renewPark/main/86260_202305121548203532.jpg"
+                                    alt="좌측상단배너이미지4"></li>
+                        </ul>
+                    </div>
+                    <div class="mainbanner_leftbtn">
+                        <span class="mainbanner_prev">
+                            <img src="https://subin114.github.io/portfolio_03/img/bt_mLeft_pre.gif" alt="이전버튼">
+                        </span>
+                        <span class="mainbanner_next">
+                            <img src="https://subin114.github.io/portfolio_03/img/bt_mLeft_next.gif" alt="다음버튼">
+                        </span>
+                    </div>
+                </div>
+
+                <!--인터파크 추천-->
+                <div class="trendSection">
+                    <div class="interparkRecommend">
+                        <img src="https://bimage.interpark.com/UI/pc/main/2017/text/h2_interparkRecommend.png"
+                            alt="인터파크 추천">
+                        <span class="more"><a href="#">더보기 <i class="fa-solid fa-caret-right"></i></a></span>
+
+                        <div class="mainSlider">
+                            <ul class="main_Slide" style="margin-left: 0;">
+                                <li>
+                                    <div class="main_Slideimgbox">
+                                        <div class="main_Slideclip" style="position: relative;"><img
+                                                src="https://subin114.github.io/portfolio_03/img/heartClip.png" alt="하트클립"></div>
+                                    </div>
+                                    <div class="main_Slidecontent">
+                                        <span class="star" style="width: 100%;">★★★★★ <em class="score">10</em></span>
+                                        <p></p>
+                                        <div class="content">
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="main_Slideimgbox">
+                                        <div class="main_Slideclip" style="position: relative;"><img
+                                                src="https://subin114.github.io/portfolio_03/img/heartClip.png" alt="하트클립"></div>
+                                    </div>
+                                    <div class="main_Slidecontent">
+                                        <span class="star">★★★★★ <em class="score">10</em></span>
+                                        <p></p>
+                                        <div class="content">
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="main_Slideimgbox">
+                                        <div class="main_Slideclip" style="position: relative;"><img
+                                                src="https://subin114.github.io/portfolio_03/img/heartClip.png" alt="하트클립"></div>
+                                    </div>
+                                    <div class="main_Slidecontent">
+                                        <span class="star">★★★★★ <em class="score">10</em></span>
+                                        <p></p>
+                                        <div class="content">
+                                        <p></p>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="main_Slideimgbox">
+                                        <div class="main_Slideclip" style="position: relative;"><img
+                                                src="https://subin114.github.io/portfolio_03/img/heartClip.png" alt="하트클립"></div>
+                                    </div>
+                                    <div class="main_Slidecontent">
+                                        <span class="star">★★★★★ <em class="score">10</em></span>
+                                        <p></p>
+                                        <div class="content">
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <span class="mainSlider_prev"><i class="fa-solid fa-chevron-left"></i></span>
+                        <span class="mainSlider_next"><i class="fa-solid fa-chevron-right"></i></span>
+
+
+                    </div>
+
+                    <div class="trendSection_rightbox">
+                        <h2>Trend<span>&</span>Issue</h2>
+                        <img src="https://simage.kyobobook.co.kr/newimages/adcenter/IMAC/creatives/2023/05/12/71047/trand_0510_1.png"
+                            alt="trendSection_rightbox_img">
+                    </div>
+
+                    <!--출판사 초이스!-->
+                    <div class="trendSection_choice">
+                        <div class="choiceBox">
+                            <div class="choiceBox_title">
+                                <span class="choiceBox_span1">출판사</span>
+                                <span class="choiceBox_span2">초이스 <i>!</i></span>
+                            </div>
+                            <div class="choiceBox_wrap">
+                                <a href="#"><img
+                                        src="https://simage.kyobobook.co.kr/newimages/adcenter/IMAC/creatives/2023/05/12/71047/cc_0510_1.jpg"
+                                        alt="이토록 굉장한 세계"></a>
+                            </div>
+                        </div>
+                        <!--미디어 추천!-->
+                        <div class="mediaBox">
+                            <div class="mediaBox_title">
+                                <span class="mediaBox_span1">미디어</span>
+                                <span class="mediaBox_span2">추천<i>!</i></span>
+                            </div>
+                            <div class="mediaBox_wrap">
+                                <div class="media">
+                                    <ul>
+                                        <li class="mediaContent">
+                                            <a href="#"><img
+                                                    src="https://bimage.interpark.com/milti/renewPark/main/116352_20230505014145201.jpg"
+                                                    alt="mediaImg1"></a>
+                                        </li>
+                                        <li class="mediaContent">
+                                            <a href="#"><img
+                                                    src="https://bimage.interpark.com/milti/renewPark/main/116352_202305121536162531.jpg"
+                                                    alt="mediaImg2"></a>
+                                        </li>
+                                        <li class="mediaContent">
+                                            <a href="#"><img
+                                                    src="https://bimage.interpark.com/milti/renewPark/main/116352_202304211604502211.png"
+                                                    alt="mediaImg3"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <ul class="mediaDot">
+                                    <li class="on">
+                                        <i class="fa-solid fa-circle"></i>
+                                    </li>
+                                    <li><i class="fa-solid fa-circle"></i></li>
+                                    <li><i class="fa-solid fa-circle"></i></li>
+                                </ul>
+                                <span class="mediaPrev"><i class="fa-solid fa-chevron-left"></i></span>
+                                <span class="mediaNext"><i class="fa-solid fa-chevron-right"></i></span>
+                            </div>
+                        </div>
+                        <!--이책 어때?-->
+                        <div class="num_box3">
+                            <div class="how">
+                                <ul>
+                                    <li class="howContent">
+                                        <a href="#"><img
+                                                src="https://bimage.interpark.com/milti/bookPark/advertise/adImg/nadImg100279.jpg"
+                                                alt="howContentimg1"></a>
+                                    </li>
+                                    <li class="howContent">
+                                        <a href="#"><img
+                                                src="https://bimage.interpark.com/milti/bookPark/advertise/adImg/nadImg100280.jpg"
+                                                alt="howContent2"></a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <ul class="howDot">
+                                <li class="on">
+                                    <i class="fa-solid fa-circle"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-circle"></i>
+                                </li>
+                            </ul>
+                            <span class="howPrev"><i class="fa-solid fa-chevron-left"></i></span>
+                            <span class="howNext"><i class="fa-solid fa-chevron-right"></i></span>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="login">
+                    <a href="#"><img src="https://bimage.interpark.com/UI/pc/main/2018/banner_recommend_login.png"
+                            alt="로그인 하기"></a>
+                </div>
+
+                <!--분야별 추천-->
+
+                <div class="categoryRecommend">
+                    <div class="recommendWrap">
+                        <div class="recommendTitle">
+                            <img src="https://bimage.interpark.com/UI/pc/main/2017/text/h2_categoryRecommend.png"
+                                alt="분야별 추천이미지">
+                        </div>
+                        <div id="categoryTaps">
+                            <ul id="categoryTaps_nav">
+                                <li><a href="#">문학</a></li>
+                                <li><a href="#">인문/교양</a></li>
+                                <li><a href="#">경제/실용</a></li>
+                                <li><a href="#">유아/아동</a></li>
+                                <li><a href="#">학습/어학</a></li>
+                                <li><a href="#">외국도서</a></li>
+                            </ul>
+
+                            <div id="tabContent">
+                                <div class="tabContent_box" style="display: block;">
+                                    <ul class="literature">
+                                        <li>
+                                        </li>
+
+                                        <li>
+                                        </li>
+
+                                        <li>
+                                        </li>
+
+                                        <li>
+                                        </li>
+
+                                        <li>
+                                        </li>
+
+                                        <li>
+                                        </li>
+                                    </ul>
+                                    
+                                    <ul class="literature">
+                                    <li>
+                            </li>
+
+                            <li>
+                            </li>
+
+                            <li>
+                            </li>
+
+                            <li>
+                            </li>
+
+                            <li>
+                    </li>
+
+                    <li>
+                    </li>
+
+                        </ul>
+
+                                    <span class="bx-Prev"><i class="fa-solid fa-chevron-left"></i></span>
+                                    <span class="bx-Next"><i class="fa-solid fa-chevron-right"></i></span>
+
+
+                                    <div class="literatureBanner">
+                                        <img src="https://simage.kyobobook.co.kr/newimages/adcenter/IMAC/creatives/2023/05/12/71047/bun_0510_1.jpg"
+                                            alt="literatureBanner1">
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div id="tabContent2" style="display: none;">
+                                <div class="tabContent_box">
+                                    <ul class="human">
+                                        <li>
+                                        </li>
+
+                                        <li>
+                                        </li>
+
+
+
+                                        <li>
+                                        </li>
+
+
+                                        <li>
+                                        </li>
+
+                                        <li>
+                                        </li>
+
+                                        <li>
+                                        </li>
+
+                                    </ul>
+
+                                    <ul class="human">
+                                        <li>
+                                        </li>
+
+                                        <li>
+                                        </li>
+
+
+
+                                        <li>
+                                        </li>
+
+
+                                        <li>
+                                        </li>
+
+                                        <li>
+                                        </li>
+
+                                        <li>
+                                        </li>
+
+                                    </ul>
+
+                                    <span class="bx-Prev"><i class="fa-solid fa-chevron-left"></i></span>
+                                    <span class="bx-Next"><i class="fa-solid fa-chevron-right"></i></span>
+
+
+                                    <div class="humanBanner">
+                                        <img src="https://simage.kyobobook.co.kr/newimages/adcenter/IMAC/creatives/2023/05/12/71047/bun_0510_2.jpg"
+                                            alt="humanBanner">
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+
+                            <div id="tabContent3" style="display: none;">
+                                <div class="tabContent_box">
+                                    <ul class="economy">
+                                        <li>
+                                        </li>
+
+                                        <li>
+                                        </li>
+
+
+
+                                        <li>
+                                        </li>
+
+
+                                        <li>
+                                        </li>
+
+                                        <li>
+                                        </li>
+
+                                        <li>
+                                        </li>
+
+                                    </ul>
+
+                                    <ul class="economy">
+                                        <li>
+                                        </li>
+
+                                        <li>
+                                        </li>
+
+
+
+                                        <li>
+                                        </li>
+
+
+                                        <li>
+                                        </li>
+
+                                        <li>
+                                        </li>
+
+                                        <li>
+                                        </li>
+
+                                    </ul>
+
+                                    <span class="bx_Prev"><i class="fa-solid fa-chevron-left"></i></span>
+                                    <span class="bx_Next"><i class="fa-solid fa-chevron-right"></i></span>
+
+
+                                    <div class="economyBanner">
+                                        <img src="https://simage.kyobobook.co.kr/newimages/adcenter/IMAC/creatives/2023/05/12/71047/bun_0511_bni.jpg"
+                                            alt="economyBanner">
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <div id="tabContent4" style="display: none;">
+                                <div class="tabContent_box">
+                                    <ul class="child">
+                                        <li>
+                                        </li>
+
+                                        <li>
+                                        </li>
+
+                                        <li>
+                                        </li>
+
+
+
+                                        <li>
+                                        </li>
+
+
+                                        <li>
+                                        </li>
+
+                                        <li>
+                                        </li>
+
+
+                                    </ul>
+
+                                    <ul class="child">
+                                        <li>
+                                        </li>
+
+                                        <li>
+                                        </li>
+
+                                        <li>
+                                        </li>
+
+
+
+                                        <li>
+                                        </li>
+
+
+                                        <li>
+                                        </li>
+
+                                        <li>
+                                        </li>
+
+
+                                    </ul>
+
+                                    <span class="bx_Prev"><i class="fa-solid fa-chevron-left"></i></span>
+                                    <span class="bx_Next"><i class="fa-solid fa-chevron-right"></i></span>
+
+
+                                    <div class="childBanner">
+                                        <img src="https://simage.kyobobook.co.kr/newimages/adcenter/IMAC/creatives/2023/05/15/71047/5_bun_box_0515_fb__.jpg"
+                                            alt="childBanner">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="tabContent5" style="display: none;">
+                                <div class="tabContent_box">
+                                    <ul class="study">
+                                        <li>
+                                        </li>
+
+                                        <li>
+                                        </li>
+
+                                        <li>
+                                        </li>
+
+
+
+                                        <li>
+                                        </li>
+
+
+                                        <li>
+                                        </li>
+
+                                        <li>
+                                        </li>
+
+
+                                    </ul>
+
+                                    <ul class="study">
+                                        <li>
+                                        </li>
+
+                                        <li>
+                                        </li>
+
+                                        <li>
+                                        </li>
+
+
+
+                                        <li>
+                                        </li>
+
+
+                                        <li>
+                                        </li>
+
+                                        <li>
+                                        </li>
+
+
+                                    </ul>
+
+                                    <span class="bx_Prev"><i class="fa-solid fa-chevron-left"></i></span>
+                                    <span class="bx_Next"><i class="fa-solid fa-chevron-right"></i></span>
+
+
+                                    <div class="studyBanner">
+                                        <img src="https://simage.kyobobook.co.kr/newimages/adcenter/IMAC/creatives/2023/05/19/71047/buv_0517_2.jpg "
+                                            alt="studyBanner">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="tabContent6" style="display: none;">
+                                <div class="tabContent_box">
+                                    <ul class="global">
+                                        <li>
+                                        </li>
+
+                                        <li>
+                                        </li>
+
+                                        <li>
+                                        </li>
+
+
+
+                                        <li>
+                                        </li>
+
+
+                                        <li>
+                                        </li>
+
+                                        <li>
+                                        </li>
+
+
+                                    </ul>
+
+                                    <ul class="global">
+                                        <li>
+                                        </li>
+
+                                        <li>
+                                        </li>
+
+                                        <li>
+                                        </li>
+
+
+
+                                        <li>
+                                        </li>
+
+
+                                        <li>
+                                        </li>
+
+                                        <li>
+                                        </li>
+
+
+                                    </ul>
+
+
+                                    <span class="bx_Prev"><i class="fa-solid fa-chevron-left"></i></span>
+                                    <span class="bx_Next"><i class="fa-solid fa-chevron-right"></i></span>
+
+
+                                    <div class="globalBanner">
+                                        <img src="https://simage.kyobobook.co.kr/newimages/adcenter/IMAC/creatives/2023/05/19/71047/bun__00518_sm__.jpg"
+                                            alt="globalBanner">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="pointSection">
+                    <div id="pointSection_box">
+                        <div class="pointSection_title">
+                            <div class="psTitle">
+                                <p><span class="psColor">주목! </span>이달의 책</p>
+                                <span><a href="#">더보기<i class="fa-solid fa-caret-right"></i></a></span>
+                            </div>
+                            <div class="pointSection_title2">
+                                <p class="pgNum"><span class="pgNum_count">1</span> / 4</p>
+                                <div class="pgBtn" style="position: relative;">
+                                    <span class="pgBtn_prev"><img
+                                            src="https://subin114.github.io/portfolio_03/img/img_publisherArrow1.png"
+                                            alt="pgBtn_prev"></span>
+                                    <span class="pgBtn_next"><img
+                                            src="https://subin114.github.io/portfolio_03/img/img_publisherArrow2.png"
+                                            alt="pgBtn_next"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pointSection_wrap">
+                            <ul>
+                                <li>
+                                    <div class="pointSection_top">
+                                        <div class="pointSection_imgbox">
+                                            <a href="#"><img
+                                                    src="https://bimage.interpark.com/partner/goods_image/9/2/3/4/356729234o.jpg"
+                                                    alt="호퍼 A-Z"></a>
+                                        </div>
+                                        <div class="pointSection_content">
+                                            <span class="star">★★★★✰</span>
+                                            <span class="score">9.8</span>
+
+                                            <p><a href="#">호퍼 A-Z</a></p>
+                                            <del style=" font-size: 14px;
+                                                color: #aaa;
+                                                float: left;
+                                                margin-right: 5px;  padding: 5px;">22,000원</del>
+                                            <h5>
+                                                <p class="price">19,800원</p>
+                                            </h5>
+
+                                        </div>
+                                    </div>
+                                    <div class="pointSection_bottom">
+                                        <div class="pointSection_imgbox">
+                                            <a href="#"><img
+                                                    src="https://bimage.interpark.com/partner/goods_image/2/6/7/6/356732676o.jpg"
+                                                    alt="남극곰 1: 북극 열차와 마지막 탐험대원"></a>
+                                        </div>
+                                        <div class="pointSection_content">
+                                            <span class="star">✰✰✰✰✰</span>
+                                            <span class="score">0</span>
+
+                                            <p><a href="#">남극곰 1: 북극 열차와 마지막 탐험대원</a></p>
+                                            <del style=" font-size: 14px;
+                                                color: #aaa;
+                                                float: left;
+                                                margin-right: 5px;  padding: 5px;">12,500원</del>
+                                            <h5>
+                                                <p class="price">11,250원</p>
+                                            </h5>
+
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="pointSection_top">
+                                        <div class="pointSection_imgbox">
+                                            <a href="#"><img
+                                                    src="https://bimage.interpark.com/partner/goods_image/6/7/3/6/356726736o.jpg"
+                                                    alt="아주 위험한 과학책"></a>
+                                        </div>
+                                        <div class="pointSection_content">
+                                            <span class="star">★★★★★</span>
+                                            <span class="score">10</span>
+
+                                            <p><a href="#">아주 위험한 과학책</a></p>
+                                            <del style=" font-size: 14px;
+                                                color: #aaa;
+                                                float: left;
+                                                margin-right: 5px;  padding: 5px;">23,000원</del>
+                                            <h5>
+                                                <p class="price">20,700원</p>
+                                            </h5>
+
+                                        </div>
+                                    </div>
+                                    <div class="pointSection_bottom">
+                                        <div class="pointSection_imgbox">
+                                            <a href="#"><img
+                                                    src="https://bimage.interpark.com/partner/goods_image/8/2/3/6/356728236o.jpg"
+                                                    alt="블랙 쇼맨과 환상의 여자"></a>
+                                        </div>
+                                        <div class="pointSection_content">
+                                            <span class="star">★★★★✰</span>
+                                            <span class="score">9.8</span>
+
+                                            <p><a href="#">블랙 쇼맨과 환상의 여자</a></p>
+                                            <del style=" font-size: 14px;
+                                                color: #aaa;
+                                                float: left;
+                                                margin-right: 5px;  padding: 5px;">18,000원</del>
+                                            <h5>
+                                                <p class="price">16,200원</p>
+                                            </h5>
+
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="pointSection_top">
+                                        <div class="pointSection_imgbox">
+                                            <a href="#"><img
+                                                    src="https://bimage.interpark.com/partner/goods_image/0/2/2/7/356730227o.jpg"
+                                                    alt="비트코인, 그리고 달러의 지정학"></a>
+                                        </div>
+                                        <div class="pointSection_content">
+                                            <span class="star">✰✰✰✰✰</span>
+                                            <span class="score">0</span>
+
+                                            <p><a href="#">비트코인, 그리고 달러의 지정학</a></p>
+                                            <del style=" font-size: 14px;
+                                                color: #aaa;
+                                                float: left;
+                                                margin-right: 5px;  padding: 5px;">55,000원</del>
+                                            <h5>
+                                                <p class="price">49,500원</p>
+                                            </h5>
+
+                                        </div>
+                                    </div>
+                                    <div class="pointSection_bottom">
+                                        <div class="pointSection_imgbox">
+                                            <a href="#"><img
+                                                    src="https://bimage.interpark.com/partner/goods_image/8/9/3/4/356728934o.jpg"
+                                                    alt="건전지 엄마"></a>
+                                        </div>
+                                        <div class="pointSection_content">
+                                            <span class="star">★★★★★</span>
+                                            <span class="score">10</span>
+
+                                            <p><a href="#">건전지 엄마</a></p>
+                                            <del style=" font-size: 14px;
+                                                color: #aaa;
+                                                float: left;
+                                                margin-right: 5px;  padding: 5px;">15,000원</del>
+                                            <h5>
+                                                <p class="price">13,000원</p>
+                                            </h5>
+
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="pointSection_top">
+                                        <div class="pointSection_imgbox">
+                                            <a href="#"><img
+                                                    src="https://bimage.interpark.com/partner/goods_image/1/9/7/6/356731976o.jpg"
+                                                    alt="나를 위한 가벼운 집밥책"></a>
+                                        </div>
+                                        <div class="pointSection_content">
+                                            <span class="star">★★★★★</span>
+                                            <span class="score">10</span>
+
+                                            <p><a href="#">나를 위한 가벼운 집밥책</a></p>
+                                            <del style=" font-size: 14px;
+                                                color: #aaa;
+                                                float: left;
+                                                margin-right: 5px;  padding: 5px;">16,800원</del>
+                                            <h5>
+                                                <p class="price">15,120원</p>
+                                            </h5>
+
+                                        </div>
+                                    </div>
+                                    <div class="pointSection_bottom">
+                                        <div class="pointSection_imgbox">
+                                            <a href="#"><img
+                                                    src="https://bimage.interpark.com/partner/goods_image/1/4/0/9/356731409o.jpg"
+                                                    alt="안녕? 나의 꾸러기"></a>
+                                        </div>
+                                        <div class="pointSection_content">
+                                            <span class="star">✰✰✰✰✰</span>
+                                            <span class="score">0</span>
+
+                                            <p><a href="#">안녕? 나의 꾸러기</a></p>
+                                            <del style=" font-size: 14px;
+                                                color: #aaa;
+                                                float: left;
+                                                margin-right: 5px;  padding: 5px;">16,000원</del>
+                                            <h5>
+                                                <p class="price">14,400원</p>
+                                            </h5>
+
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="sale">
+                        <ul class="salemenu">
+                            <li class="saleOn">특가할인</li>
+                            <li>정기인하</li>
+                        </ul>
+                        <ul class="salemenu_box">
+                            <li class="saleOn">
+                                <ul class="saleOn_content">
+                                    <li class="sale1">
+                                        <div>
+                                            <div class="saleImgbox">
+                                                <span><img
+                                                        src="https://subin114.github.io/portfolio_03/img/icon_discountDown.png"
+                                                        alt="saleImgbox">
+                                                    <p>특가할인</p>
+                                                    <h3>20%</h3>
+                                                </span>
+                                            </div>
+                                            <div class="saleTextbox">
+                                                <h4></h4>
+                                                <p></p>
+                                                <h5></h5>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="sale1">
+                                        <div>
+                                            <div class="saleImgbox">
+                                                <span><img
+                                                        src="https://subin114.github.io/portfolio_03/img/icon_discountDown.png"
+                                                        alt="saleImgbox">
+                                                    <p>특가할인</p>
+                                                    <h3>20%</h3>
+                                                </span>
+                                            </div>
+                                            <div class="saleTextbox">
+                                                <h4></h4>
+                                                <p></p>
+                                                <h5></h5>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="sale1">
+                                        <div>
+                                            <div class="saleImgbox">
+                                                <span><img
+                                                        src="https://subin114.github.io/portfolio_03/img/icon_discountDown.png"
+                                                        alt="saleImgbox">
+                                                    <p>특가할인</p>
+                                                    <h3>20%</h3>
+                                                </span>
+                                            </div>
+                                            <div class="saleTextbox">
+                                                <h4></h4>
+                                                <p></p>
+                                                <h5></h5>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="sale1">
+                                        <div>
+                                            <div class="saleImgbox">
+                                                <span><img
+                                                        src="https://subin114.github.io/portfolio_03/img/icon_discountDown.png"
+                                                        alt="saleImgbox">
+                                                    <p>특가할인</p>
+                                                    <h3>20%</h3>
+                                                </span>
+                                            </div>
+                                            <div class="saleTextbox">
+                                                <h4></h4>
+                                                <p></p>
+                                                <h5></h5>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li style="display: none;">
+                                <ul class="saleOn_content">
+                                    <li class="sale2">
+                                        <div>
+                                            <div class="saleImgbox2">
+                                                <span><img
+                                                        src="https://subin114.github.io/portfolio_03/img/icon_discountDown.png"
+                                                        alt="saleImgbox">
+                                                    <p>정가할인</p>
+                                                    <h3>10%</h3>
+                                                </span>
+                                            </div>
+                                            <div class="saleTextbox2">
+                                                <h4></h4>
+                                                <p></p>
+                                                <h5></h5>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="sale2">
+                                        <div>
+                                            <div class="saleImgbox2">
+                                                <span><img
+                                                        src="https://subin114.github.io/portfolio_03/img/icon_discountDown.png"
+                                                        alt="saleImgbox">
+                                                    <p>정가할인</p>
+                                                    <h3>10%</h3>
+                                                </span>
+                                            </div>
+                                            <div class="saleTextbox2">
+                                                <h4></h4>
+                                                <p></p>
+                                                <h5></h5>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="sale2">
+                                        <div>
+                                            <div class="saleImgbox2">
+                                                <span><img
+                                                        src="https://subin114.github.io/portfolio_03/img/icon_discountDown.png"
+                                                        alt="saleImgbox">
+                                                    <p>정가할인</p>
+                                                    <h3>10%</h3>
+                                                </span>
+                                            </div>
+                                            <div class="saleTextbox2">
+                                                <h4></h4>
+                                                <p></p>
+                                                <h5></h5>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="sale2">
+                                        <div>
+                                            <div class="saleImgbox2">
+                                                <span><img
+                                                        src="https://subin114.github.io/portfolio_03/img/icon_discountDown.png"
+                                                        alt="saleImgbox">
+                                                    <p>정가인하</p>
+                                                    <h3>10%</h3>
+                                                </span>
+                                            </div>
+                                            <div class="saleTextbox2">
+                                                <h4></h4>
+                                                <p></p>
+                                                <h5></h5>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="serviceHeader">
+                    <div class="serviceTop">
+                        <h2>서비스<span>&</span>혜택</h2>
+                        <div class="serviceTop_right">
+                            <h3>공지사항 <img src="https://subin114.github.io/portfolio_03/img/icon_notice.png" alt="공지사항">
+                            </h3>
+                            <a href="#">[도서] 유료 상품 배송비 인상 안내 (2023.2.20~)</a>
+                        </div>
+                    </div>
+
+                    <div class="serviceContent">
+                        <div class="contentbox1">
+                            <h3>알뜰구매 혜택</h3>
+                        </div>
+                        <div class="contentbox2">
+                            <h3>핵심 서비스</h3>
+                        </div>
+                        <div class="contentbox3">
+                            <h3>안심배송 서비스</h3>
+                            <p>해외주문배송 서비스</p>
+                            <p>안심번호 서비스</p>
+                        </div>
+                        <div class="contentbox4">
+                            <h3>고객센터</h3>
+                            <p>일반문의 1577 - 2555</p>
+                            <p>eBook 문의 1588 - 2547</p>
+                            <p>월~금 (09:00~18:00), 토요일, 일요일, 공휴일 휴무</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner">
+                <div class="bannerContent">
+                    <div class="bannerLeft">
+                        <span class="bannerLeft_text">
+                            <a href="#">친구에게 상품권 선물 FLEX로 포인트 적립까지!</a>
+                        </span>
+                        <span class="ycolor">
+                            <a href="#">상품권 선물하기</a>
+                        </span>
+                    </div>
+                    <div class="bannerRight">
+                        <span class="bannerRight_text">
+                            <a href="#">매일매일 선착순 도서 상품권 받기! </a>
+                        </span>
+                        <span class="ycolor">
+                            <a href="#">이달의 혜택모음</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!--footer-->
+            <footer>
+                <div id="footerWrap">
+                    <div class="footerNav">
+                        <ul>
+                            <li><a href="#"><span>개인정보처리방침</span></a></li>
+                            <li>|</li>
+                            <li><a href="#">청소년보호정책</a></li>
+                            <li>|</li>
+                            <li><a href="#">이용약관</a></li>
+                            <li>|</li>
+                            <li><a href="#">IR</a></li>
+                            <li>|</li>
+                            <li><a href="#">회사소개</a></li>
+                            <li>|</li>
+                            <li><a href="#">채용공고</a></li>
+                            <li>|</li>
+                            <li><a href="#">우수고객제도</a></li>
+                            <li>|</li>
+                            <li><a href="#">수익배분프로그램</a></li>
+                            <li>|</li>
+                            <li><a href="#">광고안내</a></li>
+                            <li>|</li>
+                            <li><a href="#">담당자안내</a></li>
+                            <li>|</li>
+                            <li><a href="#">판매자매니저</a></li>
+                        </ul>
+                    </div>
+                    <div class="footerMid">
+                        <div class="footerMid_1">
+                            <dl>
+                                <dt>(주)인터파크커머스</dt>
+                                <dd>주소 | 서울특별시 서초구 강남대로 447(서초동, 남서울빌딩)</dd>
+                                <dd>사업자등록번호 | 422-81-03185</dd>
+                                <dd>호스팅서비스 제공자 | (주)인터파크커머스</dd>
+                                <dd>대표이사 | 김양선</dd>
+                                <dd>통신판매업신고 | 2023-서울서초-0823</dd>
+                            </dl>
+                        </div>
+                        <div class="footerMid_2">
+                            <dl>
+                                <dt>고객센터 <a href="#"><img src="https://subin114.github.io/portfolio_03/img/btn_main_qnaClick.gif" alt="문의전클릭"></a></dt>
+                                <dd>전화 1577-2555</dd>
+                                <dd>팩스 02-6924-9050</dd>
+                                <dd>이메일 <a href="#">helpshop@interparkshop.com</a></dd>
+                                <dd>개인정보보호책임자 <a href="#">cposhopping@interparkshop.com</a></dd>
+                                <dd>개인정보보유기간 회원탈퇴시까지</dd>
+                            </dl>
+                        </div>
+                        <div class="footerMid_3">
+                            <dl>
+                                <dt>구매안전 서비스</dt>
+                                <dd>고객님은 안전거래를 위해 현금으로 5만원 이상 결제시 구매자가 보호를 받을 수 있는 구매안전 서비스를(쇼핑몰보증보험) 이용하실수 있습니다. <br> <a href="#"><img src="https://subin114.github.io/portfolio_03/img/btn_main_bottomService.gif" alt="서비스 가입사실 확인"></a></dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="footerBottom">
+                        <p class="footerBottom_1">주식회사 인터파크커머스는 인터파크 쇼핑, 인터파크 도서의 통신판매중개자로서 통신판매의 당사자가 아니므로, 개별 판매자가 등록한 오픈마켓 상품에 대해서 주식회사 인터파크커머스는 일체 책임을 지지 않습니다.</p>
+                        <p class="footerBottom_2">Copyright © INTERPARK COMMERCE Corporation ALL Rights Reserved.</p>
+                    </div>
+
+                </div>
+            </footer>
+
+        </div>
+    </div>
+    </div>
+</body>
+</html>
